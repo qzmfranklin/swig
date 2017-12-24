@@ -1,0 +1,240 @@
+test -z "1" || (cd CCache && make)
+make[1]: Entering directory '/home/zhongming/git/torrent/third_party/cc/swig/CCache'
+gcc -g -O2 -Wall -W -I.   -c -o ccache.o ccache.c
+gcc -g -O2 -Wall -W -I.   -c -o mdfour.o mdfour.c
+gcc -g -O2 -Wall -W -I.   -c -o hash.o hash.c
+gcc -g -O2 -Wall -W -I.   -c -o execute.o execute.c
+gcc -g -O2 -Wall -W -I.   -c -o util.o util.c
+gcc -g -O2 -Wall -W -I.   -c -o args.o args.c
+gcc -g -O2 -Wall -W -I.   -c -o stats.o stats.c
+make[1]: Entering directory '/home/zhongming/git/torrent/third_party/cc/swig/Source'
+make  all-am
+make[2]: Entering directory '/home/zhongming/git/torrent/third_party/cc/swig/Source'
+depbase=`echo CParse/cscanner.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT CParse/cscanner.o -MD -MP -MF $depbase.Tpo -c -o CParse/cscanner.o CParse/cscanner.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc -g -O2 -Wall -W -I.   -c -o cleanup.o cleanup.c
+gcc -g -O2 -Wall -W -I.   -c -o snprintf.o snprintf.c
+gcc -g -O2 -Wall -W -I.   -c -o unify.o unify.c
+depbase=`echo CParse/parser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT CParse/parser.o -MD -MP -MF $depbase.Tpo -c -o CParse/parser.o CParse/parser.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CParse/templ.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT CParse/templ.o -MD -MP -MF $depbase.Tpo -c -o CParse/templ.o CParse/templ.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CParse/util.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT CParse/util.o -MD -MP -MF $depbase.Tpo -c -o CParse/util.o CParse/util.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/base.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/base.o -MD -MP -MF $depbase.Tpo -c -o DOH/base.o DOH/base.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/file.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/file.o -MD -MP -MF $depbase.Tpo -c -o DOH/file.o DOH/file.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/fio.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/fio.o -MD -MP -MF $depbase.Tpo -c -o DOH/fio.o DOH/fio.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/hash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/hash.o -MD -MP -MF $depbase.Tpo -c -o DOH/hash.o DOH/hash.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/list.o -MD -MP -MF $depbase.Tpo -c -o DOH/list.o DOH/list.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/memory.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/memory.o -MD -MP -MF $depbase.Tpo -c -o DOH/memory.o DOH/memory.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc -g -O2 -Wall -W -I.  -o ccache-swig ccache.o mdfour.o hash.o execute.o util.o args.o stats.o cleanup.o snprintf.o unify.o -lz 
+depbase=`echo DOH/string.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/string.o -MD -MP -MF $depbase.Tpo -c -o DOH/string.o DOH/string.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/void.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT DOH/void.o -MD -MP -MF $depbase.Tpo -c -o DOH/void.o DOH/void.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/allegrocl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/allegrocl.o -MD -MP -MF $depbase.Tpo -c -o Modules/allegrocl.o Modules/allegrocl.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+make[1]: Leaving directory '/home/zhongming/git/torrent/third_party/cc/swig/CCache'
+depbase=`echo Modules/allocate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/allocate.o -MD -MP -MF $depbase.Tpo -c -o Modules/allocate.o Modules/allocate.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/browser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/browser.o -MD -MP -MF $depbase.Tpo -c -o Modules/browser.o Modules/browser.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/cffi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/cffi.o -MD -MP -MF $depbase.Tpo -c -o Modules/cffi.o Modules/cffi.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/chicken.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/chicken.o -MD -MP -MF $depbase.Tpo -c -o Modules/chicken.o Modules/chicken.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/clisp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/clisp.o -MD -MP -MF $depbase.Tpo -c -o Modules/clisp.o Modules/clisp.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/contract.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/contract.o -MD -MP -MF $depbase.Tpo -c -o Modules/contract.o Modules/contract.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/csharp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/csharp.o -MD -MP -MF $depbase.Tpo -c -o Modules/csharp.o Modules/csharp.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/d.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/d.o -MD -MP -MF $depbase.Tpo -c -o Modules/d.o Modules/d.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/directors.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/directors.o -MD -MP -MF $depbase.Tpo -c -o Modules/directors.o Modules/directors.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/emit.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/emit.o -MD -MP -MF $depbase.Tpo -c -o Modules/emit.o Modules/emit.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/go.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/go.o -MD -MP -MF $depbase.Tpo -c -o Modules/go.o Modules/go.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/guile.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/guile.o -MD -MP -MF $depbase.Tpo -c -o Modules/guile.o Modules/guile.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/interface.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/interface.o -MD -MP -MF $depbase.Tpo -c -o Modules/interface.o Modules/interface.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/java.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/java.o -MD -MP -MF $depbase.Tpo -c -o Modules/java.o Modules/java.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/javascript.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/javascript.o -MD -MP -MF $depbase.Tpo -c -o Modules/javascript.o Modules/javascript.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/lang.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/lang.o -MD -MP -MF $depbase.Tpo -c -o Modules/lang.o Modules/lang.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/lua.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/lua.o -MD -MP -MF $depbase.Tpo -c -o Modules/lua.o Modules/lua.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/main.o -MD -MP -MF $depbase.Tpo -c -o Modules/main.o Modules/main.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/modula3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/modula3.o -MD -MP -MF $depbase.Tpo -c -o Modules/modula3.o Modules/modula3.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/module.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/module.o -MD -MP -MF $depbase.Tpo -c -o Modules/module.o Modules/module.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/mzscheme.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/mzscheme.o -MD -MP -MF $depbase.Tpo -c -o Modules/mzscheme.o Modules/mzscheme.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/nested.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/nested.o -MD -MP -MF $depbase.Tpo -c -o Modules/nested.o Modules/nested.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/ocaml.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/ocaml.o -MD -MP -MF $depbase.Tpo -c -o Modules/ocaml.o Modules/ocaml.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/octave.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/octave.o -MD -MP -MF $depbase.Tpo -c -o Modules/octave.o Modules/octave.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/overload.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/overload.o -MD -MP -MF $depbase.Tpo -c -o Modules/overload.o Modules/overload.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/perl5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/perl5.o -MD -MP -MF $depbase.Tpo -c -o Modules/perl5.o Modules/perl5.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/php.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/php.o -MD -MP -MF $depbase.Tpo -c -o Modules/php.o Modules/php.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/php5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/php5.o -MD -MP -MF $depbase.Tpo -c -o Modules/php5.o Modules/php5.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/pike.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/pike.o -MD -MP -MF $depbase.Tpo -c -o Modules/pike.o Modules/pike.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/python.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/python.o -MD -MP -MF $depbase.Tpo -c -o Modules/python.o Modules/python.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/r.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/r.o -MD -MP -MF $depbase.Tpo -c -o Modules/r.o Modules/r.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/ruby.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/ruby.o -MD -MP -MF $depbase.Tpo -c -o Modules/ruby.o Modules/ruby.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/s-exp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/s-exp.o -MD -MP -MF $depbase.Tpo -c -o Modules/s-exp.o Modules/s-exp.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/scilab.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/scilab.o -MD -MP -MF $depbase.Tpo -c -o Modules/scilab.o Modules/scilab.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/swigmain.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/swigmain.o -MD -MP -MF $depbase.Tpo -c -o Modules/swigmain.o Modules/swigmain.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/tcl8.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/tcl8.o -MD -MP -MF $depbase.Tpo -c -o Modules/tcl8.o Modules/tcl8.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/typepass.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/typepass.o -MD -MP -MF $depbase.Tpo -c -o Modules/typepass.o Modules/typepass.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/uffi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/uffi.o -MD -MP -MF $depbase.Tpo -c -o Modules/uffi.o Modules/uffi.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/utils.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/utils.o -MD -MP -MF $depbase.Tpo -c -o Modules/utils.o Modules/utils.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/xml.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Modules/xml.o -MD -MP -MF $depbase.Tpo -c -o Modules/xml.o Modules/xml.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Preprocessor/cpp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Preprocessor/cpp.o -MD -MP -MF $depbase.Tpo -c -o Preprocessor/cpp.o Preprocessor/cpp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Preprocessor/expr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Preprocessor/expr.o -MD -MP -MF $depbase.Tpo -c -o Preprocessor/expr.o Preprocessor/expr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/cwrap.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/cwrap.o -MD -MP -MF $depbase.Tpo -c -o Swig/cwrap.o Swig/cwrap.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/deprecate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/deprecate.o -MD -MP -MF $depbase.Tpo -c -o Swig/deprecate.o Swig/deprecate.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/error.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/error.o -MD -MP -MF $depbase.Tpo -c -o Swig/error.o Swig/error.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/extend.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/extend.o -MD -MP -MF $depbase.Tpo -c -o Swig/extend.o Swig/extend.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/fragment.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/fragment.o -MD -MP -MF $depbase.Tpo -c -o Swig/fragment.o Swig/fragment.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/getopt.o -MD -MP -MF $depbase.Tpo -c -o Swig/getopt.o Swig/getopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/include.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/include.o -MD -MP -MF $depbase.Tpo -c -o Swig/include.o Swig/include.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/misc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/misc.o -MD -MP -MF $depbase.Tpo -c -o Swig/misc.o Swig/misc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/naming.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/naming.o -MD -MP -MF $depbase.Tpo -c -o Swig/naming.o Swig/naming.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/parms.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/parms.o -MD -MP -MF $depbase.Tpo -c -o Swig/parms.o Swig/parms.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/scanner.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/scanner.o -MD -MP -MF $depbase.Tpo -c -o Swig/scanner.o Swig/scanner.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/stype.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/stype.o -MD -MP -MF $depbase.Tpo -c -o Swig/stype.o Swig/stype.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/symbol.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/symbol.o -MD -MP -MF $depbase.Tpo -c -o Swig/symbol.o Swig/symbol.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/tree.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/tree.o -MD -MP -MF $depbase.Tpo -c -o Swig/tree.o Swig/tree.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/typeobj.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/typeobj.o -MD -MP -MF $depbase.Tpo -c -o Swig/typeobj.o Swig/typeobj.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/typemap.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/typemap.o -MD -MP -MF $depbase.Tpo -c -o Swig/typemap.o Swig/typemap.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/typesys.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/typesys.o -MD -MP -MF $depbase.Tpo -c -o Swig/typesys.o Swig/typesys.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/wrapfunc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -g -O2 -Wall -W -ansi -pedantic -MT Swig/wrapfunc.o -MD -MP -MF $depbase.Tpo -c -o Swig/wrapfunc.o Swig/wrapfunc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+g++  -g -O2 -Wall -W -ansi -pedantic   -o eswig CParse/cscanner.o CParse/parser.o CParse/templ.o CParse/util.o DOH/base.o DOH/file.o DOH/fio.o DOH/hash.o DOH/list.o DOH/memory.o DOH/string.o DOH/void.o Modules/allegrocl.o Modules/allocate.o Modules/browser.o Modules/cffi.o Modules/chicken.o Modules/clisp.o Modules/contract.o Modules/csharp.o Modules/d.o Modules/directors.o Modules/emit.o Modules/go.o Modules/guile.o Modules/interface.o Modules/java.o Modules/javascript.o Modules/lang.o Modules/lua.o Modules/main.o Modules/modula3.o Modules/module.o Modules/mzscheme.o Modules/nested.o Modules/ocaml.o Modules/octave.o Modules/overload.o Modules/perl5.o Modules/php.o Modules/php5.o Modules/pike.o Modules/python.o Modules/r.o Modules/ruby.o Modules/s-exp.o Modules/scilab.o Modules/swigmain.o Modules/tcl8.o Modules/typepass.o Modules/uffi.o Modules/utils.o Modules/xml.o Preprocessor/cpp.o Preprocessor/expr.o Swig/cwrap.o Swig/deprecate.o Swig/error.o Swig/extend.o Swig/fragment.o Swig/getopt.o Swig/include.o Swig/misc.o Swig/naming.o Swig/parms.o Swig/scanner.o Swig/stype.o Swig/symbol.o Swig/tree.o Swig/typeobj.o Swig/typemap.o Swig/typesys.o Swig/wrapfunc.o  -ldl  -lpcre
+cp -f ../Source/eswig ../swig
+make[2]: Leaving directory '/home/zhongming/git/torrent/third_party/cc/swig/Source'
+make[1]: Leaving directory '/home/zhongming/git/torrent/third_party/cc/swig/Source'
