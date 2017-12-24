@@ -1,0 +1,13 @@
+CCACHE_SRCS = {{ ccache.srcs | pprint }}
+
+SWIG_SRCS = {{ swig.srcs | pprint }}
+
+SWIG_COPTS = [
+    '-DHAVE_CONFIG_H',
+    '-O2',
+    '-W',
+    '-Wall',
+    '-ansi',
+    '-g',
+    '-pedantic',
+]

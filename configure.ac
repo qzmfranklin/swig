@@ -47,55 +47,8 @@ AC_CHECK_FUNC(popen, AC_DEFINE(HAVE_POPEN, 1, [Define if popen is available]), A
 fi
 
 dnl PCRE
-
-dnl AX_PATH_GENERIC() relies on AC_PROG_SED() but it is defined only in
-dnl autoconf 2.60 so trivially predefine it ourselves for the older versions
-m4_ifdef([AC_PROG_SED],, [AC_DEFUN([AC_PROG_SED], [AC_PATH_PROG([SED], sed)])])
-
-AC_ARG_WITH([pcre],
-  [AS_HELP_STRING([--without-pcre],
-                  [Disable support for regular expressions using PCRE])],
-  [],
-  [with_pcre=yes])
-
-AC_MSG_CHECKING([whether to enable PCRE support])
-AC_MSG_RESULT([$with_pcre])
-
-dnl To make configuring easier, check for a locally built PCRE using the Tools/pcre-build.sh script
-if test x"${with_pcre}" = xyes ; then
-  AC_MSG_CHECKING([whether to use local PCRE])
-  local_pcre_config=no
-  if test -z $PCRE_CONFIG; then
-    if test -f `pwd`/pcre/pcre-swig-install/bin/pcre-config; then
-      PCRE_CONFIG=`pwd`/pcre/pcre-swig-install/bin/pcre-config
-      local_pcre_config=$PCRE_CONFIG
-    fi
-  fi
-  AC_MSG_RESULT([$local_pcre_config])
-fi
-AS_IF([test "x$with_pcre" != xno],
-  [AX_PATH_GENERIC([pcre],
-    [], dnl Minimal version of PCRE we need -- accept any
-    [], dnl custom sed script for version parsing is not needed
-    [AC_DEFINE([HAVE_PCRE], [1], [Define if you have PCRE library])
-     LIBS="$LIBS $PCRE_LIBS"
-     CPPFLAGS="$CPPFLAGS $PCRE_CFLAGS"
-    ],
-    [AC_MSG_FAILURE([
-        Cannot find pcre-config script from PCRE (Perl Compatible Regular Expressions)
-        library package. This dependency is needed for configure to complete,
-        Either:
-        - Install the PCRE developer package on your system (preferred approach).
-        - Download the PCRE source tarball, build and install on your system
-          as you would for any package built from source distribution.
-        - Use the Tools/pcre-build.sh script to build PCRE just for SWIG to statically
-          link against. Run 'Tools/pcre-build.sh --help' for instructions.
-          (quite easy and does not require privileges to install PCRE on your system)
-        - Use configure --without-pcre to disable regular expressions support in SWIG
-          (not recommended).])
-    ])
-  ])
-
+# zhongming: Hard code to always use pcre.
+AC_DEFINE([HAVE_PCRE], [1], [Define if you have PCRE library])
 
 dnl CCache
 AC_ARG_ENABLE([ccache], AS_HELP_STRING([--disable-ccache], [disable building and installation of ccache-swig executable (default enabled)]), [enable_ccache=$enableval], [enable_ccache=yes])
