@@ -1,7 +1,14 @@
 load(':bazel/generated_data.bzl', 'CCACHE_SRCS', 'SWIG_SRCS', 'SWIG_COPTS')
 
 
-def swig():
+def swig(pcre='//third_party/cc/pcre', byacc='//third_party/cc/byacc'):
+    '''
+    Args:
+        pcre: The pcre library.
+        byacc: The byacc binary.
+    '''
+    pcre = Label(pcre)
+    byacc = Label(byacc)
     if native.repository_name() == '@':
         gendir = '$(GENDIR)/%s' % native.package_name()
     else:
@@ -50,10 +57,8 @@ def swig():
             '-I%s' % '/'.join([gendir, 'Source', 'CParse']),
             '-I%s' % '/'.join([gendir, 'CCache']),
         ],
-        linkopts = [
-        ],
         deps = [
-            '//third_party/cc/pcre',
+            pcre,
         ],
     )
 
@@ -98,21 +103,15 @@ def swig():
         'Source/Include/swigconfig.h',
     ]
 
-    # This genrule() depends on the `yacc` program in the $PATH.
-    #   Ubuntu 16.04:
-    #       sudo apt install byacc
-    #   macOS;
-    #       brew install byacc
-    #
-    # TODO (zhongming): Should build the yacc from source.
     native.genrule(
         name = 'generated_srcs',
         outs = GENERATED_SRCS,
         tools = [
-            'autogen.sh',
+            byacc,
         ],
         srcs = native.glob([
             '**/*.in',
+            'autogen.sh',
             'CCache/ccache.h',
             'CCache/configure.ac',
             'CCache/install-sh',
@@ -124,11 +123,12 @@ def swig():
             'configure.ac',
         ]),
         cmd = ' && '.join([
+            'BYACC=$$(realpath $(location %s))' % byacc,
             'pushd ./%s &> /dev/null' % native.package_name(),
                 './autogen.sh &> /dev/null',
                 './configure &> /dev/null',
                 'pushd Source > /dev/null',
-                    '../Tools/config/ylwrap CParse/parser.y y.tab.c CParse/parser.c y.tab.h `echo CParse/parser.c | sed -e s/cc$$/hh/ -e s/cpp$$/hpp/ -e s/cxx$$/hxx/ -e s/c++$$/h++/ -e s/c$$/h/` y.output CParse/parser.output -- byacc -d &> /dev/null',
+                    '../Tools/config/ylwrap CParse/parser.y y.tab.c CParse/parser.c y.tab.h `echo CParse/parser.c | sed -e s/cc$$/hh/ -e s/cpp$$/hpp/ -e s/cxx$$/hxx/ -e s/c++$$/h++/ -e s/c$$/h/` y.output CParse/parser.output -- $$BYACC -d &> /dev/null',
                 'popd > /dev/null',
             'popd > /dev/null',
         ] + [
